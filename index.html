@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sci-Fi Book Club Form</title>
+	<link href="../Desktop/book-club-form/css/general.css" rel="stylesheet">
+</head>
+<body>
+
+<h1>Sci-Fi Book Club Application Form</h1>
+
+<hr>
+
+<form>
+	<div> 
+	<!--	All inputs must have labels. 
+			The label is associated with the input using the `for` attribute. 
+			The `for` attribute must match the ID of the input tag. 
+	-->
+		<label for="name">Name</label>
+		<input type="text" id="name" class="input-text" required>
+	</div>
+	
+	<div>
+		<label for="email">E-mail address</label>
+		<input type="email" id="email" class="input-text" maxlength="256">
+	</div>
+
+	<div>
+		<label for="phone">Phone</label>
+		<input type="tel" id="phone">
+	</div>
+	
+	<div>
+		<label for="address">Address</label>
+		<input type="text" id="address" class="input-text" required>
+	</div>
+
+	<div>
+		<label for="city">City</label>
+		<input type="text" id="city" class="input-text" required>
+	</div>
+
+	<div>
+		<label for="province">Province</label>
+		<select id="province" required>
+			<option></option>
+			<option>Alberta</option>			
+			<option>British Columbia</option>
+			<option>Manitobia</option>
+			<option>New Bruinswick</option>
+			<option>Newfoundland and Labrador</option>
+			<option>Northwest Territories</option>
+			<option>Nova Scotia</option>		
+			<option>Nunavut</option>
+			<option>Ontario</option>
+			<option>Prince Edward Island</option>
+			<option>Quebec</option>
+			<option>Saskatchewan</option>
+			<option>Yukon</option>
+		</select>
+	</div>
+	
+	<div> 
+		<label for="postal">Postal Code</label>
+		<input type="text" id="postal" class="input-text" maxlength="7" required>
+	</div>
+
+	<div>
+	 <!-- Insert what time of day would be best to meet div here
+	 Note: This is a required field --> 
+	 </div>
+
+
+	<div>
+		<label for="books">How many books have you read this year?</label>
+		<input type="number" id="books">
+	</div>
+	
+	<div>
+		<label for="fave-book">Describe your favourite book & author:</label>
+		<textarea id="fave-book" class="input-text"></textarea>
+	</div>
+	
+
+	<fieldset>
+		<legend>How much do you love this genre? </legend>
+		
+		<input type="radio" id="favourite" name="genre-opinion">
+		<label for="favourite">Absolute Favourite</label>
+	
+		<input type="radio" id="like" name="genre-opinion">
+		<label for="like">Like</label>	
+					
+		<input type="radio" id="neutral" name="genre-opinion">
+		<label for="neutral">Neutral</label>
+	
+		<input type="radio" id="dislike" name="genre-opinion">
+		<label for="dislike">Dislike</label>
+		
+		<input type="radio" id="notfavourite" name="genre-opinion">
+		<label for="notfavourite">Least Favourite</label>					
+	</fieldset>
+
+	<div>
+		<label for="bio">Describe yourself</label>
+		<textarea id="bio" class="input-text"></textarea>
+	</div>
+
+	<button type="submit">Submit</button>
+
+</form>
+
+
+</body>
+</html>
