@@ -17,7 +17,7 @@
 			The label is associated with the input using the `for` attribute. 
 			The `for` attribute must match the ID of the input tag. 
 	-->
-		<label for="name">Name
+		<label for="name">Name <img src="img/asterisk.png" class="img" alt="required">
 		<strong class="error">Please enter your name.</strong>		
 		</label>
 		<input type="text" id="name" class="input-text input-error" required>
@@ -27,8 +27,8 @@
 	-->
 	
 	<div>
-		<label for="email">E-mail address</label>
-		<input type="email" id="email" class="input-text" maxlength="256" required>
+		<label for="email">E-mail address <img src="img/asterisk.png" class="img" alt="required"></label>
+		<input type="email" id="email" class="input-text" maxlength="256" placeholder="you@domain.com" required>
 	</div>
 
 	<div>
@@ -37,19 +37,19 @@
 	</div>
 	
 	<div>
-		<label for="address">Address</label>
+		<label for="address">Address <img src="img/asterisk.png" class="img" alt="required"></label>
 		<input type="text" id="address" class="input-text" required>
 	</div>
-
+	
 	<div>
-		<label for="city">City
-		<strong class="error">Please enter your name.</strong>		
+		<label for="city">City <img src="img/asterisk.png" class="img" alt="required">
+		<strong class="error">Please enter your city.</strong>		
 		</label>
 		<input type="text" id="city" class="input-text input-error" required>
 	</div>
-
+	
 	<div>
-		<label for="province">Province</label>
+		<label for="province">Province <img src="img/asterisk.png" class="img" alt="required"></label>
 		<select id="province" required>
 			<option></option>
 			<option>Alberta</option>			
@@ -68,13 +68,9 @@
 		</select>
 	</div>
 	
-	<div> 
-		<label for="postal">Postal Code</label>
-		<input type="text" id="postal" class="input-text" maxlength="7" required>
-	</div>
 
 	<div>
-		<label for="meet">What time of day would be best to meet?</label>
+		<label for="meet">What time of day would be best to meet? <img src="img/asterisk.png" class="img" alt="required"></label>
 		<input type="datetime-local" id="meet" required>
 	 </div>
 

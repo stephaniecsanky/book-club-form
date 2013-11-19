@@ -9,6 +9,14 @@ html {
 	background-color:#9CF;
 }
 
+body {
+	margin: 5;
+	padding: 5;
+	background-image:url(../img/rocket-ship.svg);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
 label {
 	display: block;
 	cursor:pointer;
@@ -24,7 +32,7 @@ textarea {
 .input-text {
 	padding: 0.5em 0.5em;
 	background-image: linear-gradient(to bottom, #efefef, #e2e2e2);
-	width: 100%;
+	width: 97%;
 	border: 1px solid #ccc;	
 	font-size: 1rem;
 }
@@ -60,4 +68,18 @@ button {
 	background-image: linear-gradient(to bottom, #006, #009);
 	color: #fff;
 	cursor: pointer;
+}
+
+
+hr {
+	color: #f00;
+	background-color: #09F;
+	height: 2px;
+	margin-top: -22px;
+	margin-bottom: 16px;
+}
+
+img {
+	max-width: 10px;
+	max-height: 10px;
 }
