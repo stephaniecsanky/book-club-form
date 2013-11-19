@@ -7,107 +7,109 @@
 </head>
 <body>
 
-<h1>Sci-Fi Book Club Application Form</h1>
+<h1>Children's Sci-Fi Book Club Application Form</h1>
 
 <hr>
 
-<form>
-	<div> 
-	<!--	All inputs must have labels. 
-			The label is associated with the input using the `for` attribute. 
-			The `for` attribute must match the ID of the input tag. 
-	-->
-		<label for="name">Name <img src="img/asterisk.png" class="img" alt="required">
-		<strong class="error">Please enter your name.</strong>		
-		</label>
-		<input type="text" id="name" class="input-text input-error" required>
-	</div>
-	<!-- 
-		I can add image of an asterisk for each required field and provide an alt attribute of 'required' to make the website more accessible.
-	-->
-	
-	<div>
-		<label for="email">E-mail address <img src="img/asterisk.png" class="img" alt="required"></label>
-		<input type="email" id="email" class="input-text" maxlength="256" placeholder="you@domain.com" required>
-	</div>
-
-	<div>
-		<label for="phone">Phone</label>
-		<input type="tel" id="phone">
-	</div>
-	
-	<div>
-		<label for="address">Address <img src="img/asterisk.png" class="img" alt="required"></label>
-		<input type="text" id="address" class="input-text" required>
-	</div>
-	
-	<div>
-		<label for="city">City <img src="img/asterisk.png" class="img" alt="required">
-		<strong class="error">Please enter your city.</strong>		
-		</label>
-		<input type="text" id="city" class="input-text input-error" required>
-	</div>
-	
-	<div>
-		<label for="province">Province <img src="img/asterisk.png" class="img" alt="required"></label>
-		<select id="province" required>
-			<option></option>
-			<option>Alberta</option>			
-			<option>British Columbia</option>
-			<option>Manitobia</option>
-			<option>New Bruinswick</option>
-			<option>Newfoundland and Labrador</option>
-			<option>Northwest Territories</option>
-			<option>Nova Scotia</option>		
-			<option>Nunavut</option>
-			<option>Ontario</option>
-			<option>Prince Edward Island</option>
-			<option>Quebec</option>
-			<option>Saskatchewan</option>
-			<option>Yukon</option>
-		</select>
-	</div>
-	
-
-	<div>
-		<label for="meet">What time of day would be best to meet? <img src="img/asterisk.png" class="img" alt="required"></label>
-		<input type="datetime-local" id="meet" required>
-	 </div>
-
-
-	<div>
-		<label for="books">How many books have you read this year?</label>
-		<input type="number" id="books">
-	</div>
-	
-	<div>
-		<label for="fave-book">Describe your favourite book & author:</label>
-		<textarea id="fave-book" class="input-text"></textarea>
-	</div>
-	
-
-	<fieldset>
-		<legend>How much do you love this genre? </legend>
+<div class="formdiv">
+	<form>
+		<div> 
+		<!--	All inputs must have labels. 
+				The label is associated with the input using the `for` attribute. 
+				The `for` attribute must match the ID of the input tag. 
+		-->
+			<label for="name">Name <img src="img/asterisk.png" class="img" alt="required">
+			<strong class="error">Please enter your first and last name.</strong>		
+			</label>
+			<input type="text" id="name" class="input-text input-error" required>
+		</div>
+		<!-- 
+			I can add image of an asterisk for each required field and provide an alt attribute of 'required' to make the website more accessible.
+		-->
 		
-		<input type="radio" id="favourite" name="genre-opinion">
-		<label for="favourite">Absolute Favourite</label>
+		<div>
+			<label for="email">E-mail address <img src="img/asterisk.png" class="img" alt="required"></label>
+			<input type="email" id="email" class="input-text" maxlength="256" placeholder="you@domain.com" required>
+		</div>
 	
-		<input type="radio" id="like" name="genre-opinion">
-		<label for="like">Like</label>	
-					
-		<input type="radio" id="neutral" name="genre-opinion">
-		<label for="neutral">Neutral</label>
-	
-		<input type="radio" id="dislike" name="genre-opinion">
-		<label for="dislike">Dislike</label>
+		<div>
+			<label for="phone">Phone</label>
+			<input type="tel" id="phone">
+		</div>
 		
-		<input type="radio" id="notfavourite" name="genre-opinion">
-		<label for="notfavourite">Least Favourite</label>					
-	</fieldset>
-
-	<button type="submit">Submit</button>
-
-</form>
+		<div>
+			<label for="address">Address <img src="img/asterisk.png" class="img" alt="required"></label>
+			<input type="text" id="address" class="input-text" required>
+		</div>
+		
+		<div>
+			<label for="city">City <img src="img/asterisk.png" class="img" alt="required">
+			<strong class="error">Please enter your city.</strong>		
+			</label>
+			<input type="text" id="city" class="input-text input-error" required>
+		</div>
+		
+		<div>
+			<label for="province">Province <img src="img/asterisk.png" class="img" alt="required"></label>
+			<select id="province" required>
+				<option></option>
+				<option>Alberta</option>			
+				<option>British Columbia</option>
+				<option>Manitobia</option>
+				<option>New Bruinswick</option>
+				<option>Newfoundland and Labrador</option>
+				<option>Northwest Territories</option>
+				<option>Nova Scotia</option>		
+				<option>Nunavut</option>
+				<option>Ontario</option>
+				<option>Prince Edward Island</option>
+				<option>Quebec</option>
+				<option>Saskatchewan</option>
+				<option>Yukon</option>
+			</select>
+		</div>
+		
+	
+		<div>
+			<label for="meet">What time of day would be best to meet? <img src="img/asterisk.png" class="img" alt="required"></label>
+			<input type="datetime-local" id="meet" required>
+		 </div>
+	
+	
+		<div>
+			<label for="books">How many books have you read this year?</label>
+			<input type="number" id="books">
+		</div>
+		
+		<div>
+			<label for="fave-book">Describe your favourite book & author:</label>
+			<textarea id="fave-book" class="input-text"></textarea>
+		</div>
+		
+	
+		<fieldset>
+			<legend>How much do you love this genre? </legend>
+			
+			<input type="radio" id="favourite" name="genre-opinion">
+			<label for="favourite">Absolute Favourite</label>
+		
+			<input type="radio" id="like" name="genre-opinion">
+			<label for="like">Like</label>	
+						
+			<input type="radio" id="neutral" name="genre-opinion">
+			<label for="neutral">Neutral</label>
+		
+			<input type="radio" id="dislike" name="genre-opinion">
+			<label for="dislike">Dislike</label>
+			
+			<input type="radio" id="notfavourite" name="genre-opinion">
+			<label for="notfavourite">Least Favourite</label>					
+		</fieldset>
+	
+		<button type="submit">Submit</button>
+	
+	</form>
+</div>
 
 
 </body>

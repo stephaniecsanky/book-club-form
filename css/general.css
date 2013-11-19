@@ -6,13 +6,14 @@ box-sizing: border-box;
 
 html {
 	font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background-color:#9CF;
+	background-color:#92CDED;
+
 }
 
 body {
 	margin: 5;
 	padding: 5;
-	background-image:url(../img/rocket-ship.svg);
+	background-image:url(../img/rocket-ship.png);
 	background-repeat:no-repeat;
 	background-position:center;
 }
@@ -61,23 +62,31 @@ fieldset {
 }
 
 button {
-	padding: 1em;
+	padding: 0.5em;
 	font-size: 1.125rem;
-	border: 2px solid #00f;
-	border-radius: 8xp;
-	background-image: linear-gradient(to bottom, #006, #009);
+	border: 2px solid #900;
+	border-radius: 6px;
+	background-image: linear-gradient(to bottom, #C60, #F90);
 	color: #fff;
 	cursor: pointer;
 }
 
 
+.formdiv {
+	opacity: 1;
+	max-width: 600px;
+	padding: 25px;
+} 
+	
+	
 hr {
 	color: #f00;
-	background-color: #09F;
-	height: 2px;
-	margin-top: -22px;
+	background-color: #E00;
+	height: 3px;
+	margin-top: -17px;
 	margin-bottom: 16px;
 }
+
 
 img {
 	max-width: 10px;
