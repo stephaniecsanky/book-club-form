@@ -1,0 +1,51 @@
+ {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+ }
+
+html {
+	font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+label {
+	display: block;
+	cursor:pointer;
+}
+
+input,
+textarea {
+	font-size: 1rem;
+	font-family: Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.input-text {
+	padding: 0.5em 0.5em;
+	background-image: linear-gradient(to bottom, #efefef, #e2e2e2);
+	width: 100%;
+	border: 1px solid #ccc;	
+	font-size: 1rem;
+}
+
+input + label {
+	display:inline;
+}
+
+div {
+	margin-bottom: 14px;
+}
+
+fieldset {
+	margin-bottom: 14px;
+}
+
+button {
+	padding: 1em;
+	font-size: 1.125rem;
+	border: 2px solid #00f;
+	border-radius: 8xp;
+	background-image: linear-gradient(to bottom, #00f, #66e);
+	color: #fff;
+	cursor: pointer;
+}
